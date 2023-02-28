@@ -15,6 +15,16 @@ public class DoesNotContain {
      * @return true if arr does not contain target. false otherwise.
      */
     public boolean arrayDoesNotContain(int[] arr, int target){
-        return false;
+        boolean b = true;
+
+        for(int x: arr){
+            if(x == target){
+                b = false;
+                break;
+            }else
+            b = true;
+        }
+
+        return b;
     }
 }
